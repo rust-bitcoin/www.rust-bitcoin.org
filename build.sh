@@ -42,7 +42,7 @@ build() {
 
 # Deploy the site to https://github.com/rust-bitcoin/rust-bitcoin.github.io
 deploy() {
-    local _date=$(date)
+    local _date=$(date --utc)
     echo -e "\033[0;32m Deploying site to GitHub...\033[0m"
     cd $root
 
