@@ -1,0 +1,7 @@
+# .gitignore for www.rust-bitcoin.org
+
+# web build
+site/public
+
+# mdbook build
+cookbook/book
