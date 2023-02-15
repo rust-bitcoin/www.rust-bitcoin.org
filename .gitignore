@@ -2,6 +2,8 @@
 
 # web build
 site/public
+site/.hugo_build.lock
 
 # mdbook build
 cookbook/book
+site/static/book
