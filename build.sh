@@ -15,12 +15,10 @@ main() {
         fi
     fi
 
-    # build
-    build
-    
     if [ $_deploy = true ]; then
         deploy
     else
+        build
         echo ""
         echo -e "\033[0;32m Site built, you can serve locally by cd'ing into site/ and running 'hugo serve'...\033[0m"
     fi
@@ -45,6 +43,15 @@ deploy() {
     local _date=$(date --utc)
     echo -e "\033[0;32m Deploying site to GitHub...\033[0m"
     cd $root
+
+    local branch=$(git rev-parse --abbrev-ref HEAD)
+
+    if [ $branch != "master" ]; then
+        echo "Not on master branch, must be on master to deploy"
+        return 1
+    fi
+
+    build
 
     # Commit changes.
     cd site/public
