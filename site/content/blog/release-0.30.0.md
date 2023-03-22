@@ -1,6 +1,6 @@
 ---
 title: "Release 0.30.0 is out!"
-date: 2023-02-21T20:00:00-07:00
+date: 2023-03-21T12:00:00-07:00
 draft: false
 ---
 
