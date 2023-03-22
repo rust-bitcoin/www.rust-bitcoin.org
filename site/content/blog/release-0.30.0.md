@@ -4,7 +4,7 @@ date: 2023-03-21T12:00:00-07:00
 draft: false
 ---
 
-`rust-bitcoin` version 0.30.0 is out now.
+`rust-bitcoin` [version 0.30.0](https://docs.rs/bitcoin/0.30.0/bitcoin/index.html) is out now.
 
 <!--more-->
 
