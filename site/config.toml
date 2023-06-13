@@ -20,6 +20,7 @@ theme = "nightfall"
 author = "rust-bitcoin"
 user = "dev"
 hostname = "rust-bitcoin.org"
+footerHTML = 'License CC-01 , Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme'
 
 [[params.social]]
 key = 0
