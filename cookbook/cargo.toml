@@ -1,0 +1,7 @@
+[package]
+name = "rust-bitcoin-cookbook"
+version = "0.1.0"
+authors = ["Toby Harding<me@tobin.cc>", "Einherjar <realeinherjar@proton.me>"]
+
+[dependencies]
+bitcoin = { version = "0.30", features = ["std", "rand-std"] }
