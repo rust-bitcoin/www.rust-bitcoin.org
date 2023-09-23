@@ -8,6 +8,3 @@ description = "A cookbook for Rust Bitcoin development"
 
 [rust]
 edition = "2021"
-
-[preprocessor.keeper]
-command = "mdbook-keeper" # mdbook-keeper allows us to test code examples in the book

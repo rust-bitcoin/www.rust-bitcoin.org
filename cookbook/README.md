@@ -10,29 +10,37 @@ Don't forget to check [`rust-bitcoin`'s documentation](https://docs.rs/bitcoin)
 For the cook book we use [`mdbook`](https://rust-lang.github.io/mdBook).
 Please check how to install it on your system.
 
-To build the cook book locally, run:
+To build the cookbook locally, run:
 
 ```bash
 mdbook build
 ```
 
-If you want to preview the cook book locally, run:
+If you want to preview the cookbook locally, run:
 
 ```bash
 mdbook serve
 ```
 
+### Testing the code snippets
+
 Since [`mdbook` does not support external crates](https://github.com/rust-lang/mdBook/issues/706),
-we use [`mdbook-keeper`](https://github.com/tfpk/mdbook-keeper/)
-to test the code snippets in the cook book.
-First, install `mdbook-keeper`:
+we use [a solution provided by `doc-comment`](https://github.com/rust-lang/mdBook/issues/706#issuecomment-1139423009)
+to test the code snippets in the cookbook.
+First, go to the `tests/` directory:
 
 ```bash
-cargo install mdbook-keeper
+cd tests
 ```
 
-Then, run the following command to test the code snippets:
+Then, run the `generate.sh` to automatically generate all tests files:
 
 ```bash
-mdbook test
+./generate.sh
+```
+
+Finally run the tests:
+
+```bash
+cargo test
 ```

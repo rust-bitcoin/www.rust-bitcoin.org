@@ -6,6 +6,7 @@ site/.hugo_build.lock
 
 # mdbook build
 cookbook/book
-cookbook/target
-cookbook/Cargo.lock
+cookbook/tests/Cargo.lock
+cookbook/tests/target
+cookbook/tests/src
 site/static/book
