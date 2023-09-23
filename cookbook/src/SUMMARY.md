@@ -1,6 +1,6 @@
 # Summary
 
-[Table of Contents](./table-of-contents.md)
+[Table of Contents](./table_of_contents.md)
 [About](./about.md)
 
-- [Chapter 1](./chapter-1.md)
+- [Chapter 1](./chapter_1.md)
