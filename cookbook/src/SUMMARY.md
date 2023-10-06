@@ -1,5 +1,7 @@
 # Summary
 
-[Table of Contents](./table_of_contents.md)
-[About](./about.md)
-- [Chapter 1](./chapter_1.md)
+[Introduction](./intro.md)
+
+- [Constructing and Signing Transactions](tx.md)
+  - [SegWit V0](tx_segwit-v0.md)
+  - [Taproot](tx_taproot.md)
