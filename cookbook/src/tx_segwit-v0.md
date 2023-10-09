@@ -255,8 +255,8 @@ Inside the [`TxIn`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/transaction
    It should be empty. That's why the `ScriptBuf::new()`.
 - `sequence` is the sequence number; it is a [`Sequence`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/transaction/struct.Sequence.html) type.
    We are using the [`ENABLE_RBF_NO_LOCKTIME`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/transaction/struct.Sequence.html#associatedconstant.ENABLE_RBF_NO_LOCKTIME) constant.
-- `witness` is the witness stack; it is a [`Witness`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/transaction/struct.Witness.html) type.
-   We are using the [`default`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/transaction/struct.Witness.html#impl-Default) method to create an empty witness that will be filled in later after signing.
+- `witness` is the witness stack; it is a [`Witness`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/witness/struct.Witness.html) type.
+   We are using the [`default`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/witness/struct.Witness.html#impl-Default) method to create an empty witness that will be filled in later after signing.
    This is possible because `Witness` implements the [`Default`](https://doc.rust-lang.org/std/default/trait.Default.html) trait.
 
 In `let spend = TxOut {...}` we are instantiating the spend output.
@@ -265,7 +265,7 @@ Inside the [`TxOut`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/transactio
 - `value` is the amount we are spending; it is a [`u64`](https://doc.rust-lang.org/std/primitive.u64.html) type.
    We are using the `const SPEND_AMOUNT` that we defined earlier.
 - `script_pubkey` is the script code required to spend a P2WPKH output; it is a [`ScriptBuf`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/script/struct.ScriptBuf.html) type.
-   We are using the [`script_pubkey`](https://docs.rs/bitcoin/latest/bitcoin/blockdata/address/struct.Address.html#method.script_pubkey) method to generate the script pubkey from the receivers address.
+   We are using the [`script_pubkey`](https://docs.rs/bitcoin/latest/bitcoin/address/struct.Address.html#method.script_pubkey) method to generate the script pubkey from the receivers address.
    This will lock the output to the receiver's address.
 
 In `let change = TxOut {...}` we are instantiating the change output.
@@ -336,7 +336,9 @@ It expects a single argument of type `AsRef<[u8]>` which is a reference to a byt
 As the last step we print this to terminal using the [`println!`](https://doc.rust-lang.org/std/macro.println.html) macro.
 This transaction is now ready to be broadcast to the Bitcoin network.
 
+<!-- markdown-link-check-disable -->
 [^today]: mid-2023.
+<!-- markdown-link-check-enable -->
 
 [^change]: Please note that the `CHANGE_AMOUNT` is not the same as the `DUMMY_UTXO_AMOUNT` minus the `SPEND_AMOUNT`.
            This is due to the fact that we need to pay a fee for the transaction.
