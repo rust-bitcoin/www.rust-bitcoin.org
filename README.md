@@ -1,19 +1,8 @@
 # Website source for `www.rust-bitcoin.org`
 
-While the website is deployed at rust-bitcoin.org there are still missing parts such as the cookbook.
-We will be happy to receive contributions adding interesting examples.
+This repository has been archived, the source code for [rust-bitcoin.org](https://rust-bitcoin.org/)
+now lives at [rust-bitcoin.github.io](https://github.com/rust-bitcoin/rust-bitcoin.github.io).
 
-Website for the rust-bitcoin ecosystem. The site is built using [hugo](https://gohugo.io/) and the
-[nightfall](https://themes.gohugo.io/themes/hugo-theme-nightfall/) theme.
+See commit: `0f7c9c69 Import site from www.rust-bitcoin.org` on that repo.
 
-Includes a cookbook built with [mdbook](https://rust-lang.github.io/mdBook/).
-
-## License
-
-This website is licensed under [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication][cc].
-
-[![CC BY-SA 4.0][cc-image]][cc]
-
-[cc]: https://creativecommons.org/publicdomain/zero/1.0/
-[cc-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-shield]: https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg
+So long, and thanks for all the fish.
